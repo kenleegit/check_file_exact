@@ -64,7 +64,7 @@ if ($opt_h) {
 
 $opt_f = shift unless ($opt_f);
 
-if (! $opt_C) {
+if (($opt_C != 0 ) && (! $opt_C)) {
 	print "FILE_EXACT UNKNOWN: No size specified\n";
 	exit $ERRORS{'UNKNOWN'};
 }
